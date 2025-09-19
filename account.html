@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+              <div class="logo">
+                  <img src="style/qrlogo.png" alt="logo" width="125px">
+              </div>
+              <nav>  
+                  <ul>
+                      <li ><a href="index.html">Home</a></li>
+                      <li><a href="">Products</a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Contact</a></li>
+                      <li><a href="account.html">Account</a></li>
+                  </ul>
+              </nav>
+        </div>     
+    </div> 
+    <!--acount page-->
+    <div class="accountpage">
+        <div class="container">
+            <div class="row">
+                <div class="col2">
+                    <img src="style/old-book-watercolor-illustration-png.webp" width="100%">
+                </div>
+                <div class="col2">
+                    <div class="formcont">
+                        <div class="formbtn">
+                            <span onclick="Login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform" >
+                            <input type="text" placeholder="User name">
+                            <input type="password" placeholder="Password">
+                            <button type="Submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="registrationform">
+                            <input type="text" placeholder="User name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="Submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                <h3>Downlode our App</h3>
+                <p>Downlode App for Android and ios Mobiles.</p>
+                </div>
+                <div class="footercol2">
+                <img src="style/qrlogo.png">
+                <p>Our purpose is to provide a brief summary and books to read and buy respectively.</p>
+                </div>
+                <div class="footercol3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Community</li>
+                </ul>
+            </div>
+            <div class="footercol4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>YouTube</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Intstagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright2024 - QUICK READ</p>
+    </div>
+</div>
+<script src="script.js" ></script>
+</body>
+</html>

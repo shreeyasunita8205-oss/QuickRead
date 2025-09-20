@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         book.addEventListener("click", () => {
             const title = book.querySelector("h3").textContent;
             const bookId = book.getAttribute("data-book-id"); // Assuming book ID is stored in a data attribute
-            const summaryUrl = `summaries/${bookId}.docx`; // Assuming summaries are stored in a folder named "summaries"
+            const summaryUrl = `${bookId}.docx`; // Assuming summaries are stored in a folder named "summaries"
 
             fetch(summaryUrl)
                 .then(response => response.arrayBuffer()) // Use arrayBuffer() to fetch binary data
@@ -93,4 +93,5 @@ registrationform.style.transform = "translatex(300px)";
 loginform.style.transform = "translatex(300px)";
 indicator.style.transform = "translatex(0px)";
 }
+
 
